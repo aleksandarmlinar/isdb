@@ -1,0 +1,167 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*#ffba00*/
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 6px;
+    background: url("../images/concert-768722_1920.jpg") center center fixed;
+}
+
+h2, h5{
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 6px;
+}
+
+h1, h3, h4, h6{
+	margin: 10px 0;
+}
+
+p{
+    width: 400px;
+    white-space: break-spaces;
+}
+
+.form{
+    float: right;
+    width: 80%;
+}
+
+label {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+#search {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #e4e4e4;
+    margin: 10px -104px 0 0 ;
+}
+
+button {
+    color: white;
+    background: #ffba00;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+
+#closeBtn{
+	display: none;
+	background-color: #ffba00;
+	border: none;
+	color: white;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 110px;
+	right: 6px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 35px;
+	margin: 10px;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+.content{
+    width: 99%;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+    grid-template-columns: repeat(2, 50%);
+    position: absolute;
+    margin-top: 10px;
+	padding: 10px;
+    background-color: #fff;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.wrapper{
+    display: -ms-grid;
+    display: grid;
+	-ms-grid-columns: 20% 2px 20% 2px 20% 2px 20% 2px 20%;
+	grid-template-columns: repeat(5, 20%);
+    grid-column-gap: 2px;
+    grid-row-gap: 4px;
+    margin-top: 20px;
+
+}
+
+.cell{
+    margin: 2px;
+    height: 100%;
+    min-height: 300px;
+    background-color: #e6e6e6;
+    padding: 10px 10px 10px 0;
+    cursor: pointer;
+    border: 6px solid #fff;
+}
+
+video {
+    background-color: brown;
+}
+
+.no-song-info {
+    background-color: #ffba00;
+    width: 300px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+}
+
+
+
+/*media querys för responsive, resten styrs via script.js*/
+@media(max-width: 400px)  {
+
+    .logo{
+        width: 60px;
+        height: auto;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    #closeBtn {
+        top: 86px;
+        right: 0px;
+    }
+    
+    
+   
+}
